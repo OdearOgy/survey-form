@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20vmin auto;
+  background-color: #a9d7d1;
+  text-align: center;
+}
+
+#survey-form {
+  background-color: #fafafa;
+  margin: auto;
+  width: 80%;
+  border-radius: .8vmin;
+  border: .5vmin solid #b3d5d2;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20vmin auto; */
+  height: 100vh;
+}
+
+#name-label, #email-label, #number-label, #option-label {
+  display: flex;
+  justify-content: center;
+  /* align-items: stretch; */
+  padding: 2vmin 0;
+
+}
+
+.inp-paragraph {
+  text-align: right;
+}
+
+.radio-div, .checkbox-div {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.radio-label, .checkbox-label {
+  display: flex;
+  align-items: center;
+}
