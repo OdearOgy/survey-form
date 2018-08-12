@@ -6,23 +6,29 @@
 
 body {
   margin: 5vmin auto;
-  background-color: #a9d7d1;
+  /* background-color: #a9d7d1; */
+  border: 1px solid black;
   text-align: center;
-  background-image: url('https://cdn-images-1.medium.com/max/1024/0*1yGJPwNHuhDZLyLq.jpg');
+  background-image: url('https://cdn.wallpapersafari.com/37/12/rwT3Gg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 
 #main {
-  width: 80vmax;
+  width: 45vw;
   margin: auto;
   padding: 2vmin 5vmin;
-  /* background-color: #fafafa; */
+  background-color: #fafafa;
+  border: 1px solid black;
 
 }
 
 .form-div {
   margin: auto;
-  width: 38vw;
+  width: 40vw;
   /* display: flex; */
 }
 
@@ -52,6 +58,8 @@ body {
   display: flex;
   justify-content: flex-start;
   /* align-items: center; */
+  padding: 2vmin 0;
+  cursor: pointer;
 }
 
 .radio-label, .checkbox-label {
@@ -68,8 +76,15 @@ body {
     width: 15vmin;
     margin: 2vmin;
     border: 0 solid;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 
+#submit:hover {
+  box-shadow: 0 .4vmin 1vmin rgba(0, 0, 0, .8);
+  transition: all .1s ease-in-out;
+
+}
 
 .inp-field  {
   width: 22vmin;
