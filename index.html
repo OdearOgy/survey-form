@@ -6,109 +6,108 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
-      a simple Survey Form
-    </p>
+    <div id="main">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          A video game survey
+        </p>
+        <div class="form-div">
+          <form id="survey-form">
+              <label for="name" id="name-label">
+                <p class="inp-paragraph">* Name:</p>
+                <input type="text" id="name" placeholder="Enter your name" required class="inp-field">
 
-    <form id="survey-form">
-      <!-- <label for="name" id="name-label">
-          <p class="inp-paragraph">* Name:</p>
-          <input type="text" name="Name" id="name" placeholder="Please enter your name" required>
-      </label>
-      <label for="email" id="email-label">
-            <p class="inp-paragraph">* Email:</p>
-            <input type="email" name="Email" id="email" placeholder="Please enter your email" required>
-      </label>
-      <label for="number" id="number-label">
-            <p class="inp-paragraph">* Number:</p>
-            <input type="number" name="Number" id="number" placeholder="Please enter your number" required  min="0" max="999">
-      </label> -->
-
-        <label for="name" id="name-label">
-          <p class="inp-paragraph">* Name:</p>
-          <input type="text" id="name" placeholder="Enter your name" required>
-
-        </label>
+              </label>
 
 
-        <label for="email" id="email-label">
-          <p class="inp-paragraph">* Email:</p>
-          <input type="email" id="email" placeholder="Enter your Email" required>
-        </label>
+              <label for="email" id="email-label">
+                <p class="inp-paragraph">* Email:</p>
+                <input type="email" id="email" placeholder="Enter your Email" required class="inp-field">
+              </label>
 
-        <label for="number" id="number-label">
-          <p class="inp-paragraph">* Age:</p>
-          <input type="number" id="number" placeholder="Confirm your Age" min="5" max="99">
+              <label for="number" id="number-label">
+                <p class="inp-paragraph">* Age:</p>
+                <input type="number" id="number" placeholder="Age" min="1" max="125" required class="inp-field">
 
-        </label>
+              </label>
 
-        <label for="dropdown" id="option-label">
-            <p class="inp-paragraph">Which option best describes your current role?</p>
-            <select name="list" id="dropdown">
-                <optgroup label="Select an option">
-                    <option value="std">Student</option>
-                    <option value="ftjob">Full Time Job</option>
-                    <option value="ftlearner">Full Time Learner</option>
-                    <option value="null">Preffer not to say</option>
-                </optgroup>
-            </select>
-        </label>
-
-        <!-- radio container -->
-        <div class="radio-div">
-            <p class="inp-paragraph">How often you play video games?</p>
-            <div class="radio-container">
-                  <div class="radio-label">
-                    <input type="radio" id="daily" name="often" value="daily">
-                    <label for="daily">Daily</label>
+              <!-- radio container -->
+              <div class="radio-div">
+                  <p class="inp-paragraph">How often you play video games?</p>
+                  <div class="radio-container">
+                        <div class="radio-label">
+                          <input type="radio" id="daily" name="often" value="daily">
+                          <label for="daily">Daily</label>
+                        </div>
+                        <div class="radio-label">
+                          <input type="radio" id="sev-week" name="often" value="week">
+                          <label for="sev-week">Several times a week</label>
+                        </div>
+                        <div class="radio-label">
+                          <input type="radio" id="sev-month" name="often" value="month">
+                          <label for="sev-month">Several times a month</label>
+                        </div>
+                        <div class="radio-label">
+                          <input type="radio" id="sev-year" name="often" value="year">
+                          <label for="sev-year">Several times a year</label>
+                        </div>
                   </div>
-                  <div class="radio-label">
-                    <input type="radio" id="sev-week" name="often" value="week">
-                    <label for="sev-week">Several times a week</label>
-                  </div>
-                  <div class="radio-label">
-                    <input type="radio" id="sev-month" name="often" value="month">
-                    <label for="sev-month">Several times a month</label>
-                  </div>
-                  <div class="radio-label">
-                    <input type="radio" id="sev-year" name="often" value="year">
-                    <label for="sev-year">Several times a year</label>
-                  </div>
-            </div>
+              </div>
+
+              <!-- checkbox container -->
+              <div class="checkbox-div">
+                <p class="inp-paragraph">How do you prefer to acquire video games?</p>
+                <div class="checkbox-container">
+                      <div class="checkbox-label">
+                        <input type="checkbox" id="borrow" name="acquire" value="borrow">
+                        <label for="borrow">I borrow games</label>
+                      </div>
+                      <div class="checkbox-label">
+                        <input type="checkbox" id="buy" name="acquire" value="buy">
+                        <label for="buy">I buy games from shops</label>
+                      </div>
+                      <div class="checkbox-label">
+                        <input type="checkbox" id="download" name="acquire" value="download">
+                        <label for="download">I download games</label>
+                      </div>
+                      <div class="checkbox-label">
+                        <input type="checkbox" id="rent" name="acquire" value="rent">
+                        <label for="rent">I rent games from a games club</label>
+                      </div>
+                </div>
+              </div>
+
+              <!-- dropdown selector -->
+              <label for="dropdown" id="option-label">
+                  <p class="inp-paragraph">Which option best describes your current role?</p>
+                  <select name="list" id="dropdown">
+                      <optgroup label="Select an option">
+                          <option value="std">Student</option>
+                          <option value="ftjob">Full Time Job</option>
+                          <option value="ftlearner">Full Time Learner</option>
+                          <option value="null">Preffer not to say</option>
+                      </optgroup>
+                  </select>
+              </label>
+
+              <!-- textarea field -->
+              <div class="textarea-div">
+                <p class="inp-paragraph">Descrbe how you feel about video games:</p>
+                <div>
+                    <textarea name="name" rows="6" cols="30" placeholder="Enter your answer here"></textarea>
+                </div>
+              </div>
+
+              <!-- button div-->
+              <div class="btn-div">
+                <button id="submit">submit</button>
+              </div>
+
+              <!-- end of form -->
+          </form>
         </div>
 
-        <!-- checkbox container -->
-
-        <div class="checkbox-div">
-          <p class="inp-paragraph">How do you prefer to acquire video games?</p>
-          <div class="checkbox-container">
-                <div class="checkbox-label">
-                  <input type="checkbox" id="borrow" name="acquire" value="borrow">
-                  <label for="borrow">I borrow games</label>
-                </div>
-                <div class="checkbox-label">
-                  <input type="checkbox" id="buy" name="acquire" value="buy">
-                  <label for="buy">I buy games from shops</label>
-                </div>
-                <div class="checkbox-label">
-                  <input type="checkbox" id="download" name="acquire" value="download">
-                  <label for="download">I download games</label>
-                </div>
-                <div class="checkbox-label">
-                  <input type="checkbox" id="rent" name="acquire" value="rent">
-                  <label for="rent">I rent games from a games club</label>
-                </div>
-          </div>
-        </div>
-
-
-
-
-
-
-    </form>
-
+  </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
