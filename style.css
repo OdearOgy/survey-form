@@ -7,7 +7,6 @@
 body {
   margin: 5vmin auto;
   /* background-color: #a9d7d1; */
-  border: 1px solid black;
   text-align: center;
   background-image: url('https://cdn.wallpapersafari.com/37/12/rwT3Gg.jpg');
   background-position: center;
@@ -22,22 +21,18 @@ body {
   margin: auto;
   padding: 2vmin 5vmin;
   background-color: #fafafa;
-  border: 1px solid black;
-
 }
 
 .form-div {
   margin: auto;
   width: 40vw;
-  /* display: flex; */
 }
 
 #survey-form {
   background-color: #fafafa;
   margin: auto;
-  /* width: 70vmax; */
   border-radius: .8vmin;
-  border: .5vmin solid #b3d5d2;
+  /* border: .5vmin solid #b3d5d2; */
 }
 
 #name-label, #email-label, #number-label, #option-label {
@@ -51,13 +46,11 @@ body {
   text-align: right;
   width: 30vmin;
   display: inline;
-  /* border: 1px solid black; */
 }
 
 .radio-div, .checkbox-div, .textarea-div {
   display: flex;
   justify-content: flex-start;
-  /* align-items: center; */
   padding: 2vmin 0;
   cursor: pointer;
 }
