@@ -5,14 +5,13 @@
 }
 
 body {
-  margin: 5vmin auto;
-  /* background-color: #a9d7d1; */
+  margin: 5vmin 0;
+  background-color: #a9d7d1;
   text-align: center;
   background-image: url('https://cdn.wallpapersafari.com/37/12/rwT3Gg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 
@@ -32,15 +31,35 @@ body {
   background-color: #fafafa;
   margin: auto;
   border-radius: .8vmin;
-  /* border: .5vmin solid #b3d5d2; */
 }
 
 #name-label, #email-label, #number-label, #option-label {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 2vmin 2vmin;
+  padding: 10px;
 }
+
+
+.section-1 {
+  display: flex;
+  justify-content: space-around;
+  border: 2px dashed black;
+}
+
+.left-content {
+  text-align: left;
+  color: red;
+}
+
+.left-content, .right-content {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 2vmin;
+}
+
 
 .inp-paragraph {
   text-align: right;
@@ -61,22 +80,21 @@ body {
 }
 
 #submit {
-    background-color: #59ace0;
-    border-radius: .5vmin;
-    color: white;
-    font-size: 1em;
-    height: 5vmin;
-    width: 15vmin;
-    margin: 2vmin;
-    border: 0 solid;
-    cursor: pointer;
-    transition: all .1s ease-in-out;
+  background-color: #59ace0;
+  border-radius: .5vmin;
+  color: white;
+  font-size: 1em;
+  height: 5vmin;
+  width: 15vmin;
+  margin: 2vmin;
+  border: 0 solid;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
 }
 
 #submit:hover {
   box-shadow: 0 .4vmin 1vmin rgba(0, 0, 0, .8);
   transition: all .1s ease-in-out;
-
 }
 
 .inp-field  {

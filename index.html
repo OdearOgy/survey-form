@@ -13,23 +13,13 @@
         </p>
         <div class="form-div">
           <form id="survey-form">
-              <label for="name" id="name-label">
-                <p class="inp-paragraph">* Name:</p>
-                <input type="text" id="name" placeholder="Enter your name" required class="inp-field">
+              <label for="name" id="name-label">* Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required class="inp-field" />
+              <label for="email" id="email-label">* Email:</label>
+                <input type="email" id="email" placeholder="Enter your Email" required class="inp-field" />
+              <label for="number" id="number-label">* Age:</label>
+                <input type="number" id="number" placeholder="Age" min="1" max="125" required class="inp-field" />
 
-              </label>
-
-
-              <label for="email" id="email-label">
-                <p class="inp-paragraph">* Email:</p>
-                <input type="email" id="email" placeholder="Enter your Email" required class="inp-field">
-              </label>
-
-              <label for="number" id="number-label">
-                <p class="inp-paragraph">* Age:</p>
-                <input type="number" id="number" placeholder="Age" min="1" max="125" required class="inp-field">
-
-              </label>
 
               <!-- radio container -->
               <div class="radio-div">
@@ -77,6 +67,28 @@
                 </div>
               </div>
 
+              <div class="radio-div">
+                  <p class="inp-paragraph">How much you spend on games per year?</p>
+                  <div class="radio-container">
+                        <div class="radio-label">
+                          <input type="radio" id="fifty" name="much" value="fifty">
+                          <label for="fifty">0-50</label>
+                        </div>
+                        <div class="radio-label">
+                          <input type="radio" id="hundred" name="much" value="hundred">
+                          <label for="hundred">50-100</label>
+                        </div>
+                        <div class="radio-label">
+                          <input type="radio" id="two-hundred" name="much" value="two-hundred">
+                          <label for="two-hundred">100-200</label>
+                        </div>
+                        <div class="radio-label">
+                          <input type="radio" id="more" name="much" value="more">
+                          <label for="more">200 dollar or more</label>
+                        </div>
+                  </div>
+              </div>
+
               <!-- dropdown selector -->
               <label for="dropdown" id="option-label">
                   <p class="inp-paragraph">Which option best describes your current role?</p>
@@ -100,7 +112,7 @@
 
               <!-- button div-->
               <div class="btn-div">
-                <button id="submit">submit</button>
+                <input type="submit" id="submit" value="submit">
               </div>
 
               <!-- end of form -->
